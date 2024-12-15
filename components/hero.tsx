@@ -21,9 +21,11 @@ export function Hero() {
               Transform your business journey with AI-powered insights and structured learning paths
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-black/90">
-                Join The Waitlist
-              </button>
+              <a href="https://forms.gle/3Sp3RmyQ8u5TXn866" target="_blank" rel="noopener noreferrer">
+                <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-black/90">
+                  Join The Waitlist
+                </button>
+              </a>
               <button className="bg-white text-black px-6 py-3 rounded-md border border-black hover:bg-gray-50">
                 Learn More
               </button>
