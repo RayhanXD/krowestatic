@@ -13,10 +13,10 @@ export function Header() {
                 alt="Krowe Logo"
                 width={32}
                 height={32}
-                className="rounded-full bg-[#FF4800]"
+                className="rounded-full bg-[#FFFFFF]"
               />
             </div>
-            <span className="text-xl font-bold text-black">Krowe</span>
+            <span className="text-xl font-bold text-black">Krowe Hub</span>
           </Link>
           <nav className="flex items-center space-x-6">
             <Link href="#features" className="text-sm font-medium text-black hover:text-[#FF4800]">

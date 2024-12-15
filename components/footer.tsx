@@ -93,9 +93,14 @@ export function Footer() {
                   repeatCount="indefinite"
                 />
               </circle>
-              <text x="200" y="220" textAnchor="middle" fill="white" fontSize="48" fontWeight="bold">
-                KROWE
-              </text>
+              <image
+                href="/krowelogo.png"
+                x="102"
+                y="102"
+                width="192"
+                height="192"
+                preserveAspectRatio="xMidYMid meet"
+              />
             </svg>
           </div>
         </div>
