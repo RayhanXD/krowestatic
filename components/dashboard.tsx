@@ -24,7 +24,7 @@ const categories: CategoryCard[] = [
   {
     title: "Marketing",
     icon: <Megaphone className="w-5 h-5" />,
-    color: "bg-[#F4844A]",
+    color: "bg-[#FF4800]",
     progress: 65,
     tasksLeft: 45,
     suggestedTask: "New Content Ideas"
@@ -44,7 +44,7 @@ const deadlines = [
     date: "10/25",
     title: "Next Social Media Post",
     progress: 56,
-    color: "bg-[#F4844A]"
+    color: "bg-[#FF4800]"
   },
   {
     date: "10/25",

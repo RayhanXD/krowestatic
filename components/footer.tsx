@@ -52,7 +52,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 }
 
   return (
-    <footer className="bg-black text-white py-16 relative overflow-hidden">
+    <footer id="contact" className="bg-black text-white py-16 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="grid gap-12 lg:grid-cols-2 relative z-10">
           <div className="max-w-md">
@@ -156,12 +156,22 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className="border-t border-white/10 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex space-x-6">
-              {[Facebook, Twitter, LinkedIn, Instagram].map((Icon, index) => (
-                <a key={index} href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">{Icon.name}</span>
-                  <Icon className="h-6 w-6" />
-                </a>
-              ))}
+              <a href="https://www.facebook.com/kroweinc" className="text-gray-400 hover:text-white transition-colors">
+                <span className="sr-only">Facebook</span>
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="https://twitter.com/kroweinc" className="text-gray-400 hover:text-white transition-colors">
+                <span className="sr-only">Twitter</span>
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a href="https://www.linkedin.com/company/krowe/" className="text-gray-400 hover:text-white transition-colors">
+                <span className="sr-only">LinkedIn</span>
+                <LinkedIn className="h-6 w-6" />
+              </a>
+              <a href="https://www.instagram.com/kroweinc?igsh=MThjazMzeGk4ZzE0Mw==" className="text-gray-400 hover:text-white transition-colors">
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-6 w-6" />
+              </a>
             </div>
             <p className="text-sm text-gray-400">
               © 2024 Krowe. All rights reserved.
