@@ -5,12 +5,51 @@ import { ArrowRight, Facebook, Twitter, LinkedinIcon as LinkedIn, Instagram, Che
 export function Footer() {
   const [email, setEmail] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle email submission logic here
-    console.log('Submitted email:', email)
+  const [message, setMessage] = useState('')
+const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  
+  try {
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: email
+      })
+    })
+
+    const data = await response.json()
+
+    if (!response.ok) {
+      throw new Error(data.message || 'Failed to subscribe')
+    }
+
+    setStatus('success')
+    setMessage('Thank you for subscribing!')
     setEmail('')
+    
+    // Reset message after 3 seconds
+    setTimeout(() => {
+      setMessage('')
+      setStatus('idle')
+    }, 3000)
+
+  } catch (error) {
+    console.error('Error submitting email:', error)
+    setStatus('error')
+    setMessage('Failed to subscribe. Please try again.')
+    
+    // Reset message after 3 seconds
+    setTimeout(() => {
+      setMessage('')
+      setStatus('idle')
+    }, 3000)
   }
+}
 
   return (
     <footer className="bg-black text-white py-16 relative overflow-hidden">
@@ -40,6 +79,16 @@ export function Footer() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
             </form>
+
+            {message && (
+              <div className={`mt-4 p-3 rounded-md text-sm ${
+                status === 'success' 
+                  ? 'bg-green-100 text-green-700' 
+                  : 'bg-red-100 text-red-700'
+              }`}>
+                {message}
+              </div>
+            )}
           </div>
           <div className="relative w-full h-64 md:h-80 lg:h-96">
             <svg
