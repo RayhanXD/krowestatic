@@ -60,8 +60,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               Join the New Age of Business with Krowe
             </h2>
             <p className="text-gray-400 mb-8">
-              Transform your business journey with AI-powered insights and structured learning paths. Stay updated with our latest features and tips.
-            </p>
+            Make your idea a reality with Krowe’s AI-powered insights and structured learning paths. Stay updated with our latest features and tips.            </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
