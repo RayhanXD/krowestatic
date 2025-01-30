@@ -197,10 +197,10 @@ export function Features() {
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-black">
-            Powerful Features for Modern Business
+          From Idea to Launch Krowe has your back          
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Everything you need to grow and manage your business effectively
+          Everything you need to start a business in one place
           </p>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
@@ -225,4 +225,6 @@ export function Features() {
     </section>
   )
 }
+
+
 
