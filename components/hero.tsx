@@ -18,7 +18,7 @@ export function Hero() {
               Your Start Here
             </h1>
             <p className="text-lg text-gray-600">
-              Transform your business journey with AI-powered insights and structured learning paths
+              We help founders launch their idea through an Ai powered platform that guides you through each step of the way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="https://forms.gle/3Sp3RmyQ8u5TXn866" target="_blank" rel="noopener noreferrer">
