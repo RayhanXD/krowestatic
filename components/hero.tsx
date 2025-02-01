@@ -23,7 +23,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="https://forms.gle/3Sp3RmyQ8u5TXn866" target="_blank" rel="noopener noreferrer">
                 <button className="bg-[#FF4800] text-white px-6 py-3 rounded-md hover:bg-black/90">
-                  Join The Waitlist
+                  Sign Up
                 </button>
               </a>
               <a href="#contact">
